@@ -43,10 +43,10 @@ services:
     build: ./samples/api
     container_name: sample-api
     environment:
-      - VIRTUAL_HOST=api.youhire.cn
+      - VIRTUAL_HOST=www.youhire.cn
       - VIRTUAL_NETWORK=nginx-proxy
       - VIRTUAL_PORT=3000
-      - LETSENCRYPT_HOST=api.youhire.cn
+      - LETSENCRYPT_HOST=www.youhire.cn
       - LETSENCRYPT_EMAIL=jwang@youhire.cn
 
   sample-website:
@@ -61,5 +61,5 @@ services:
       - VIRTUAL_HOST=youhire.cn
       - VIRTUAL_NETWORK=nginx-proxy
       - VIRTUAL_PORT=80
-      - LETSENCRYPT_HOST=www.youhire.cn
+      - LETSENCRYPT_HOST=youhire.cn
       - LETSENCRYPT_EMAIL=jwang@youhire.cn
