@@ -1,3 +1,3 @@
 window.config = {
-    apiUrl: 'https://api.youhire.cn'
+    apiUrl: 'https://www.youhire.cn'
 };
